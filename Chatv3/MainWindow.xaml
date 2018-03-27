@@ -1,0 +1,18 @@
+﻿<Window x:Class="Chatv3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Chatv3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="148.468" Width="554.256" WindowStyle="None" ResizeMode="NoResize" ScrollViewer.VerticalScrollBarVisibility="Disabled" ShowInTaskbar="False" Opacity="0.2" AllowsTransparency="True" Loaded="Window_Loaded" Activated="Window_Activated" Deactivated="Window_Deactivated">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="53*"/>
+            <ColumnDefinition Width="210*"/>
+        </Grid.ColumnDefinitions>
+        <TextBox x:Name="Ausgabe" Margin="15,0,0,0" TextWrapping="Wrap" Grid.ColumnSpan="2" Height="122" VerticalAlignment="Top" />
+        <Rectangle x:Name="Dragbar" Fill="#FFF4F4F5" HorizontalAlignment="Left" Stroke="Black" Width="15" MouseLeftButtonDown="Dragbar_MouseLeftButtonDown"/>
+        <TextBox x:Name="Eingabe" Margin="15,122,0,0" TextWrapping="Wrap" Grid.ColumnSpan="2" KeyDown="Eingabe_KeyDown"/>
+    </Grid>
+</Window>
